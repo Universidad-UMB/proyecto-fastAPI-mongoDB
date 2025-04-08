@@ -15,7 +15,7 @@ ALGORITHM = "HS256"
 
 
 encrypt = CryptContext(schemes=["bcrypt"], deprecated="auto") 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/login")
 
 
 
