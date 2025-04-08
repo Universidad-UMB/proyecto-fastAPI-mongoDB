@@ -2,7 +2,7 @@
 
 Bienvenido a la API de **Control de Finanzas Personales**, una solución desarrollada con **FastAPI** y **MongoDB Atlas** para gestionar de forma segura tus ingresos, gastos, categorías personalizadas y resúmenes financieros mensuales.
 
-🔗 [Demo en Railway]([https://tu-url-en-railway.app/docs](https://proyecto-fastapi-mongodb-production.up.railway.app/docs#/))
+🔗 [Demo en Railway](https://proyecto-fastapi-mongodb-production.up.railway.app/docs#/)
 
 ---
 
