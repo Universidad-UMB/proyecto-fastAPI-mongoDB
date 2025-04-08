@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends
-from app.schemas.user_schema import User
-from app.services.user_service import decodeAccessToken
-from app.services.summary_service import monthlySummary
+from schemas.user_schema import User
+from services.user_service import decodeAccessToken
+from services.summary_service import monthlySummary
 
 router = APIRouter()
 

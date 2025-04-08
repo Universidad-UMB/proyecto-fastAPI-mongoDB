@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends
-from app.schemas.transaction_schema import Transaction
-from app.schemas.transaction_update_schema import UpdateTransaction
-from app.services.user_service import decodeAccessToken 
-from app.services import transaction_service
+from schemas.transaction_schema import Transaction
+from schemas.transaction_update_schema import UpdateTransaction
+from services.user_service import decodeAccessToken 
+from services import transaction_service
 
 
 router = APIRouter()

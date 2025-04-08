@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends
-from app.schemas.user_schema import User
-from app.schemas.user_login_schema import UserLogin
-from app.services import user_service
+from schemas.user_schema import User
+from schemas.user_login_schema import UserLogin
+from services import user_service
 from datetime import timedelta
 
 

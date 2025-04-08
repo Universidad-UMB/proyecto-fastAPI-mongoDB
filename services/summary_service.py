@@ -1,5 +1,5 @@
-from app.db.database import collectionItem
-from app.schemas.user_schema import User
+from db.database import collectionItem
+from schemas.user_schema import User
 
 
 async def monthlySummary(currentUser: User):

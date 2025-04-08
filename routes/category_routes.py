@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends
-from app.services.user_service import decodeAccessToken
-from app.services import category_service
-from app.schemas.user_schema import User
-from app.schemas.category_schema import Category
-from app.schemas.category_schema_update import CategoryUpdate
+from services.user_service import decodeAccessToken
+from services import category_service
+from schemas.user_schema import User
+from schemas.category_schema import Category
+from schemas.category_schema_update import CategoryUpdate
 
 
 router = APIRouter()

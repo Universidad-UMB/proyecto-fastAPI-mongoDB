@@ -1,9 +1,9 @@
 from fastapi import APIRouter, HTTPException
-from app.schemas.item_schema import Item
+from schemas.item_schema import Item
 from bson import ObjectId
 from bson.errors import InvalidId
-from app.db.database import collectionItem
-from app.schemas.item_update_schema import ItemUpdate
+from db.database import collectionItem
+from schemas.item_update_schema import ItemUpdate
 
 router = APIRouter()
 

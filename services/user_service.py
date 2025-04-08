@@ -1,13 +1,13 @@
 from fastapi import HTTPException, Depends
-from app.schemas.user_schema import User
-from app.schemas.user_login_schema import UserLogin
-from app.db.database import collectionItem
+from schemas.user_schema import User
+from schemas.user_login_schema import UserLogin
+from db.database import collectionItem
 from passlib.context import CryptContext
 from typing import Optional
 from datetime import datetime, timedelta
 from jose import jwt, JWTError, ExpiredSignatureError
 from fastapi.security import OAuth2PasswordBearer
-from app.services import category_service
+from services import category_service
 
 SECRET_KEY = "b8b31e99cf7efbd87920b8c81926bd45b05bbbd1"
 ALGORITHM = "HS256"
