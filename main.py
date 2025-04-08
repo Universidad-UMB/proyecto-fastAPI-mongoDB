@@ -1,9 +1,9 @@
 from fastapi import FastAPI
-from app.routes import item_router
-from app.routes import auth_router
-from app.routes import transaction_router
-from app.routes import category_router
-from app.routes import summary_router
+from routes import item_router
+from routes import auth_router
+from routes import transaction_router
+from routes import category_router
+from routes import summary_router
 
 app = FastAPI()
 
