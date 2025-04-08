@@ -3,6 +3,7 @@ from schemas.user_schema import User
 from schemas.user_login_schema import UserLogin
 from services import user_service
 from datetime import timedelta
+from fastapi.security import OAuth2PasswordRequestForm
 
 
 router = APIRouter()
@@ -16,7 +17,8 @@ async def userRegister(user: User ):
     return await user_service.userRegister(user)
 
 @router.post("/login")
-async def login(user: UserLogin):
+async def login(formData: OAuth2PasswordRequestForm = Depends()):
+    user = UserLogin(email=formData.username, password=formData.password)
     currentUser = await user_service.authenticateUser(user)
     accessTokenExpires = timedelta(minutes=30)
     token = user_service.createAccessToken(data={"sub": currentUser["email"]}
